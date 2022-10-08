@@ -8,7 +8,17 @@
     <title>Floating_Messenger</title>
 </head>
 <body>
-    <script src="script.js"></script>
+    <script>
+    var rotate = 0; function right(){ 
+ spin = document.getElementById("rotate");
+ rotate += 90; spin.style.transform = "rotate("+rotate+"deg)";
+}
+var rotate = 0; function left(){ 
+ spin = document.getElementById("rotate");
+ rotate += -90; spin.style.transform = "rotate("+rotate+"deg)";
+}
+
+    </script>
     <div id="container1">
         <div class="main1">
             <div class="circle"></div>
