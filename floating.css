@@ -1,0 +1,229 @@
+*{
+    margin: 0 auto;
+    height: 0 auto;
+}
+body{
+    width: 100%;
+    background-image: linear-gradient(90deg, #6f085a, #c51c53);
+}
+                /*     container     */
+@media (orientation: landscape) {
+#container1, .container2, .container3 {
+  display: flex;
+  flex-direction: row; 
+  }
+}
+@media (orientation: portrait) {
+#container1, .container2, {
+  display: flex;
+  flex-direction: column;
+  }
+.container3{
+  display: flex;
+  flex-direction: column-reverse;
+  }
+}
+                /*    main    */
+.main1,
+.main2{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+/*.main3{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}*/
+.main4,
+.main5{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    text-align: center;
+}
+.main4{
+   padding-top: 100px;
+}
+.main5{
+    margin-bottom: 29px;
+}
+.main2,
+.phone{
+    width: 100%;
+    height: 270px;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+                  /*  main1  */
+.circle{
+    width: 350px;
+    height: 370px;
+    border-radius: 100%;
+    background-image: linear-gradient(90deg, #ff4ba7, #ffda64);
+    position: absolute;
+    left: -150px;
+    top: -20px;
+    box-shadow: 0px 0px 5px 2px brown;
+}
+#rotate{
+    width: 350px;
+    height: 350px;
+    left: -150px;
+    top: -20px;
+    border-radius: 100%;
+    position: absolute;
+}
+.rotate1, .rotate2, .rotate3, .rotate4{
+    color: #FE9584;
+    font-size: 1.5pc;
+    font-weight: bolder;
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+}
+.rotate1{
+    top: 155px;
+    left: 270px;
+}
+.rotate2{
+    transform: rotate(90deg);
+    top: 290px;
+    left: 152px;
+}
+.rotate3{
+    transform: rotate(180deg);
+    left: 17px;
+    top: 166px;
+}
+.rotate4{
+    transform: rotate(-90deg);
+    top: 32px;
+    left: 107px;
+}
+.spin{
+    width: 0px;
+    height: 40px;
+    left: 0px;
+    margin-top: 80px;
+    border-radius: 0 100% 100% 0;
+    position: absolute;
+    border-top: 50px solid transparent;
+    border-right: 400px solid gray;
+    border-bottom: 50px solid transparent;
+}
+.scroll{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    top: 230px;
+    margin-left: 45%;
+    width: 200px;
+    height: 30px;
+}
+.right-deg, .mid, .left-deg{
+    font-size: 30px;
+    background-color: #ffffff1e;
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+}
+.mid{
+    width: 90px;
+}
+            /* main2 */
+.subscribe{
+    width: 200px;
+    height: 40px;
+    margin-left: -100px;
+    margin-top: 20px;
+    border-radius: 20px;
+    position: absolute;
+    background: url('youtube-subscribe-icon.png'); 
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+.dialog{
+    padding: 20px 40px 0 40px;
+    height: 370px;
+    width: 280px;
+    font-size: 23px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 2px gray;
+    background-color: #ffffff1e;
+    color: lavenderblush;
+}
+.me{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+.art_director{
+    font-size: 20px;
+    color: darkgrey;
+}
+.amazing{
+    padding: 10px 40px 10px 40px;
+    margin: 20px 50px 0 50px;
+    font-size: 150%;
+    border: 1px solid grey;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 2px gray;
+    background-color: #00FFFF;
+    color: lavenderblush;
+}
+                /*  pannel   */
+.pannel{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+    background-color: #ffffff1e;
+    box-shadow: 0px 0px 5px 2px black;
+}
+.pannel,
+.menu{
+    text-align: right;
+    text-decoration-line: none;
+    font-size: 15px;
+    color: blanchedalmond;
+    margin-right: 8px;
+}
+.menu{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #ffdfd537;
+}
+                /* floating */
+.floating{
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    margin-left: 50px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    background: url('facebook-messenger-icon.png');
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-name: jump;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes  jump{
+    0%{
+        bottom: 10px;
+    }
+    50%{
+        bottom: 25px;
+    }
+    100%{
+        bottom: 10px;
+    }
+}
